@@ -1,7 +1,7 @@
 # hadashboard-calendar-widget
 
 This is my attempt to create a calendar widget for hadasboard. To be true
-it's kind of a fullcalendar.io library wrapped on a widget.
+it's kind of a [fullcalendar.io](https://fullcalendar.io) library wrapped on a widget.
 
 ## Install
 
@@ -32,7 +32,7 @@ calendar:
 The view attribute can be one of the following: dayGridDay, dayGridWeek, dayGridMonth, timeGridDay, 
 timeGridWeek, listDay,listWeek, listMonth.
 
-Or you could take total control and use all the valid options of the fullcalendar library and pass
+Or you could take total control and use all the valid options of the [fullcalendar](https://fullcalendar.io/docs) library and pass
 then using the "fullcalendar_options". You may also use more than one calendar and set custom colors
 for each one by setting the "entities" option instead of the "entity". Example:
 
