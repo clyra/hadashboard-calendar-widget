@@ -24,4 +24,5 @@ CalendarTest1:
   debug: True
   sensorname: cal_test1
   update: 5 
-  calendars: calendar.ical_test1, calendar.ical_test2```
+  calendars: calendar.ical_test1, calendar.ical_test2
+  ```
