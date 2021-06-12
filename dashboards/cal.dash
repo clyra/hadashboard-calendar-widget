@@ -1,0 +1,39 @@
+title: Calendar
+widget_size: [100,100]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+
+clock:
+    widget_type: clock
+
+calendar:
+    widget_type: calendar
+    title: "Work Calendar"
+    entity: sensor.cal_test1
+    view: "listWeek"
+
+calendar2:
+    widget_type: calendar
+    title: "Personal Calendar"
+    entities:
+        sensor.cal_test1: 
+           color: 'green'
+        sensor.cal_test2:
+            color: 'blue'
+    fullcalendar_options:
+        displayEventTime: 'true'
+        height: "100%"
+        initialView: 'dayGridMonth'
+        headerToolbar: 
+          start: 'prev,next,today'
+          center: 'title'
+          end: 'dayGridMonth,listDay,listWeek'
+
+layout:
+    - calendar(4x4), calendar2(6x5)
+    
