@@ -16,7 +16,7 @@ and copying the fullcalendar.js file to it.
 ## Configuration
 
 The widget expects to find the calendar events on the "json" attribute of a sensor, so use the
-calendar app to create a sensor. (see !(/apps/calendar/README.md)).
+calendar app to create a sensor. (see ![calendar app](/apps/calendar/README.md)).
 
 The calendar widget can be configured using a simple configuration mode or a complex one. To
 configure it using the simple mode just set the entity and view attributes, like the following
