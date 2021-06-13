@@ -11,11 +11,11 @@ global_parameters:
 clock:
     widget_type: clock
 
-calendar:
-    widget_type: calendar
-    title: "Work Calendar"
-    entity: sensor.cal_test1
-    view: "listWeek"
+# calendar:
+#     widget_type: calendar
+#     title: "Work Calendar"
+#     entity: sensor.cal_test1
+#     view: "listWeek"
 
 calendar2:
     widget_type: calendar
@@ -23,8 +23,6 @@ calendar2:
     entities:
         sensor.cal_test1: 
            color: 'green'
-        sensor.cal_test2:
-            color: 'blue'
     fullcalendar_options:
         displayEventTime: 'true'
         height: "100%"
@@ -35,5 +33,5 @@ calendar2:
           end: 'dayGridMonth,listDay,listWeek'
 
 layout:
-    - calendar(4x4), calendar2(6x5)
+    - calendar2(6x5)
     

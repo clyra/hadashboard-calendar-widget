@@ -44,23 +44,27 @@ class Calendar(hass.Hass):
         for cal in self.calendars:
           apiurl = "{}/api/calendars/{}?start={}Z&end={}Z".format(ha_url,cal,start_date,end_date)
           self.mylog(apiurl)
-          r = get(apiurl, headers=headers, verify=False)
-          list = json.loads(r.text)
-          self.mylog(list)
-          
-          for element in list:
-            #self.log(element)
-            event = { "title": "", "start": "", "end": ""}
-            if "summary" in element:
-              event['title'] = element["summary"]
-            if "start" in element:
-              event['start'] = element["start"]
-            if "end" in element:
-              event['end'] = element["end"]
 
-            self.mylog("{}: {} {}".format(event['title'], event['start'], event['end']))
+          try:
+            r = get(apiurl, headers=headers, verify=False)
+            list = json.loads(r.text)
+            self.mylog(list)
+          
+            for element in list:
+              #self.log(element)
+              event = { "title": "", "start": "", "end": ""}
+              if "summary" in element:
+                event['title'] = element["summary"]
+              if "start" in element:
+                event['start'] = element["start"]
+              if "end" in element:
+                event['end'] = element["end"]
+
+              self.mylog("{}: {} {}".format(event['title'], event['start'], event['end']))
             
-            events.append(event)
+              events.append(event)
+          except:
+            self.log('error retrieving calendar {}'.format(cal))
 
         json_attr = { 'json': events }
 
