@@ -10,8 +10,7 @@ Variable  |  value(ex)  | obs
 ----------|----------|----
 sensorname| myname   | the app will create a sensor.myname to hold the events
 update    | 1        | time in minutes between updates
-urlcalendars | - https://www.calendarlabs.com/ical-calendar/ics/226/UN_Holidays.ics | A list with
-urls to retrieve ics files
+urlcalendars | - https://www.calendarlabs.com/ical-calendar/ics/226/UN_Holidays.ics | A list with urls to retrieve ics files
 debug     |   false | enable/disable debug messages on appdaemon logs
 
 ## Configuration example
