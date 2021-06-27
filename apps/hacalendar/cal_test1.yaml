@@ -1,6 +1,6 @@
-CalendarioTest1:
-  module: calendar
-  class: Calendar
+CalendarTest1:
+  module: hacalendar
+  class: HaCalendar
   debug: true
   sensorname: cal_test1
   update: 1

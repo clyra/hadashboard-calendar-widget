@@ -21,7 +21,7 @@ calendar2:
     widget_type: calendar
     title: "Personal Calendar"
     entities:
-        sensor.cal_test1: 
+        sensor.cal_url: 
            color: 'green'
     fullcalendar_options:
         displayEventTime: 'true'

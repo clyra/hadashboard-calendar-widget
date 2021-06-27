@@ -3,7 +3,7 @@ from requests import get
 import json
 from datetime import date, timedelta
 
-class Calendar(hass.Hass):
+class HaCalendar(hass.Hass):
 
     def initialize(self):
         self.calendars = []
@@ -74,3 +74,4 @@ class Calendar(hass.Hass):
     def mylog(self, s):
         if self.debug:
             self.log(s)
+

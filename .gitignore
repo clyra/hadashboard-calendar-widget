@@ -1,0 +1,10 @@
+appdaemon.yaml
+logs
+logs/*
+run.sh
+compiled
+namespaces
+www
+__pycache__
+*/__pycache__/*
+apps.yaml

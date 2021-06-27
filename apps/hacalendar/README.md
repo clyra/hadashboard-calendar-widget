@@ -1,6 +1,6 @@
 # Calendar app
 
-The calendar app retrieve events from a Home Assistant calendar and add then
+The hacalendar app retrieve events from a Home Assistant calendar and add then
 to the "json" atribute using a format ready to be used by the calendar widget.
 
 The app accepts the following parameters:
@@ -19,8 +19,8 @@ from two calendars, updating them every 5 minutes.
  
 ```yaml
 CalendarTest1:
-  module: calendar
-  class: Calendar
+  module: hacalendar
+  class: HaCalendar
   debug: True
   sensorname: cal_test1
   update: 5 
