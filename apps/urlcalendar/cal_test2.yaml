@@ -1,0 +1,9 @@
+CalendarTest2:
+  module: urlcalendar
+  class: UrlCalendar
+  debug: true
+  sensorname: cal_url
+  update: 10
+  urlcalendars: 
+    - https://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics
+    - https://www.calendarlabs.com/ical-calendar/ics/226/UN_Holidays.ics

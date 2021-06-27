@@ -80,6 +80,14 @@ function basecalendar(widget_id, url, skin, parameters)
             var source = Object.assign({}, x, getOptions(self, state.entity_id));
             
             //console.log(source);
+            // console.log('adding function');
+            // calendar.addEventSource( function(info, ok_cb, fail_cb) {
+            //    console.log(info);
+            //    get_state(self, state.entity_id)
+            //    //calling okcb
+            //    ok_cb([]);
+            // })
+
             calendar.addEventSource( source );
             calendar.render();
         }
