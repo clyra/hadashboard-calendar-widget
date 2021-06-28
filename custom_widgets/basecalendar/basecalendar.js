@@ -78,16 +78,13 @@ function basecalendar(widget_id, url, skin, parameters)
         {
             var x = { id: state.entity_id, 'events': state.attributes.json};
             var source = Object.assign({}, x, getOptions(self, state.entity_id));
-            
-            //console.log(source);
-            // console.log('adding function');
-            // calendar.addEventSource( function(info, ok_cb, fail_cb) {
-            //    console.log(info);
-            //    get_state(self, state.entity_id)
-            //    //calling okcb
-            //    ok_cb([]);
-            // })
 
+            //check if the source already exist to avoid duplication
+            if (calendar.getEventSourceById(state.entity_id))
+            {
+                calendar.getEventSourceById(state.entity_id).remove();
+            }
+            
             calendar.addEventSource( source );
             calendar.render();
         }
